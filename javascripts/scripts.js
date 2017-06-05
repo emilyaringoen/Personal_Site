@@ -18,7 +18,6 @@ $(window).on('scroll', function(){
 	}
 })
 
-
 const autoHideHeader = () => {
   let currentTop = $(window).scrollTop();
 
