@@ -1,19 +1,28 @@
 body {
   font-family: 'Raleway', sans-serif;
-  color: #5b5d5d;
+  color: #333333;
 }
 
-.nav_bar {
-  background-color: rgba(224, 235, 232, 0);
+
+/* NavBar Styling */
+.cd-auto-hide-header {
+  background-color: rgb(144, 190, 179);
+  opacity: 0.75;
   height: 7em;
   width: 100%;
   overflow: hidden;
   position: fixed;
+  z-index: 500;
   top: 0;
+  transition: transform .5s;
+}
+
+.cd-auto-hide-header.is-hidden {
+  transform: translateY(-100%);
 }
 
 .nav_bar ul {
-  margin-right: 2em;
+  margin-right: 5em;
 }
 
 .nav_btn {
@@ -25,28 +34,33 @@ body {
 }
 
 .nav_btn a {
-  color: #5b5d5d;
+  color: #333333;
 }
 
 .splash {
-  background-color: rgb(88, 214, 185);
-  height: 100vh;
-}
-
-.intro {
-  margin-top: 30vh;
+  background-color: rgb(144, 190, 179);
+  height: 45em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .my_name {
   font-size: 4em;
   font-weight: 300;
-  font-family: 'Homemade Apple', cursive;
-  color: #fff
+  font-family: 'Playfair Display', serif;
+  /*font-family: 'Homemade Apple', cursive;*/
+  color: #333333;
+}
+
+.logoPic {
+  height: 12em;
 }
 
 h3 {
   font-weight: 200;
-  color: #5b5d5d;
+  color: #333333;
 }
 
 /* about page styling */
@@ -61,7 +75,7 @@ h3 {
 }
 
 .aboutTop {
-  padding-top: 12em;
+  padding-top: 7em;
 }
 
 .hi {
@@ -72,7 +86,7 @@ h3 {
 }
 
 .about2 {
-  padding-top: 2em;
+  padding-top: 1.25em;
   font-size: 2em;
 }
 
@@ -80,16 +94,18 @@ h3 {
   font-size: 1.25em;
 }
 
+
+
 /* projects page styling */
 #projects {
   height: 100vh;
-  background-color: rgb(142, 209, 130);
+  background-color: rgb(144, 190, 179);
 }
 
 .projHeader {
   font-size: 3em;
   font-weight: 700;
-  color: rgb(33, 125, 104);
+  color: #333333;
   font-family: 'Playfair Display', serif;
 }
 
@@ -103,6 +119,7 @@ h3 {
 
 .portfolio-item {
   height: 157px;
+  border-radius: 0.3em;
 }
 
 .mainProjHead {
@@ -110,5 +127,40 @@ h3 {
 }
 
 .mainProjP {
+  font-size: 1.15em;
+}
+
+/*  Styling for Art Page  */
+
+#art {
+  background-color: rgb(224, 235, 232);
+  height: 100%;
+}
+
+.artImg {
+  height: 24em;
+  margin-top: 2em;
+}
+
+.artHead {
+  font-family: 'Playfair Display', serif;
+}
+
+.artP {
+  font-size: 1.25em;
+}
+
+.artDesc {
+  padding: 7em 3em 3em 3em;
+}
+
+/*  Styling for footer  */
+footer {
+  background-color: rgb(224, 235, 232);
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+.footP {
   font-size: 1.15em;
 }

@@ -10,62 +10,68 @@
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="javascripts/scripts.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="top" class="cd-auto-hide-header">
         <nav class="nav_bar">
             <ul>
+                <li class="nav_btn"><a href="#art">Art</a></li>
                 <li class="nav_btn"><a href="#projects">Projects</a></li>
                 <li class="nav_btn"><a href="#about">About</a></li>
                 <li class="nav_btn"><a href="#">Home</a></li>
             </ul>
         </nav>
     </header>
-    <section class="splash row" id="">
-        <article class="intro col-md-4 col-md-offset-4">
+    <main class="sub-nav-hero">
+    <section class="splash row" id="splash">
+        <article class="intro">
+            <img src="img/artPic/beebeebee.png" alt="" class="logoPic center-block">
             <h1 class="text-center my_name">hi, i'm emily</h1>
             <h3 class="text-center">a full-stack web developer.</h3>
         </article>
     </section>
     <section id="about">
-        <article class="row aboutTop">
-            <div class="col-md-3 col-md-offset-3">
-                <img src="img/emily2.jpg" alt="Photo of Emily Ringoen" class="about_img center-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="projHeader page-header">about.
+              </h1>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h5 class="hi text-center">hi.</h5>
-                <p class="aboutP text-center">I'm a web developer based in Boulder, CO. I have a passion for web design and solving analytical puzzles. I love to create and design web and mobile apps.</p>
+            <article class="row aboutTop">
+                <div class="col-md-3 col-md-offset-3">
+                    <img src="img/emily2.jpg" alt="Photo of Emily Ringoen" class="about_img center-block">
+                </div>
+                <div class="col-md-3">
+                    <h5 class="hi text-center">hi.</h5>
+                    <p class="aboutP text-center">I'm a web developer based in Boulder, CO. I have a passion for building the most effective and scalable applications possible. I want to help you convey your message you want to send.</p>
+                </div>
+            </article>
+            <article class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h5 class="hi text-center about2">who am i?</h5>
+                    <p class="aboutP text-center">I am a quick learner, eager to learn new skills in both front and back-end technologies. I have a keen eye for design, and enjoy solving analytical puzzles in a creative fashion. While not crunching code, I can be found running and
+                        climbing in the foothills, curling up with a good book, or trying my hand at painting.</p>
+                </div>
+                <div class="col-md-2">
+            </article>
             </div>
-        </article>
-        <article class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h5 class="hi text-center about2">who am i?</h5>
-                <p class="aboutP text-center">Pork loin short ribs biltong, ball tip sausage pastrami corned beef salami meatball drumstick chicken. Pancetta venison andouille picanha shank prosciutto short ribs turkey short loin ham hock kielbasa shankle. Corned beef pancetta shankle,
-                    jowl chicken beef flank prosciutto picanha frankfurter andouille strip steak tenderloin.</p>
-            </div>
-        </article>
     </section>
     <section id="projects">
         <div class="container">
-
-            <!-- Portfolio Item Heading -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="projHeader page-header">portfolio.
-                          <!-- <small>a digital studying aide.</small> -->
-                      </h1>
+                    <h1 class="projHeader page-header">portfolio.</h1>
                 </div>
             </div>
-            <!-- /.row -->
-
-            <!-- Portfolio Item Row -->
             <div class="row">
                 <a href="https://q2flash.herokuapp.com/" class="col-md-7">
                     <img class="img-responsive projImg" src="img/flash.png" alt="">
                 </a>
-
                 <div class="col-md-4">
                     <a href="https://q2flash.herokuapp.com/"><h3 class="mainProjHead">flash.</h3></a>
                     <p class="mainProjP">Flash is a digital studying app. This app allows users to create, read, update and delete data from a form to a relational database using Knex. It's routes were designed according to RESTful principles.</p>
@@ -109,6 +115,57 @@
                 </div>
             </div>
     </section>
+    <section id="art">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="projHeader page-header">art.
+                </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/artPic/bear.JPG" alt="Drawing of Bear" class="artImg">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/artPic/bee.JPG" alt="Drawing of Bee" class="artImg">
+                </div>
+                <div class="col-md-4 artDesc">
+                    <h2 class="artHead">a few drawings.</h2>
+                    <p class="artP">Art has always been a central part of my life. It helps me step back from the fast paced, digital world, and focus on beauty, lines, and aestethic.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/artPic/whaleBlue.JPG" alt="Drawing of Plane" class="artImg">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/artPic/fishy.JPG" alt="Drawing of Fish" class="artImg">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/artPic/bear2.JPG" alt="Drawing of Waves" class="artImg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/artPic/world.JPG" alt="Drawing of Bear" class="artImg">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/artPic/waves.JPG" alt="Drawing of Bear" class="artImg">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/artPic/whale2.JPG" alt="Drawing of Bear" class="artImg">
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="row">
+        <div class="col-md-12">
+            <p class="footP text-center">&copy; 2017 Emily Ringoen
+                <p>
+        </div>
+    </footer>
 </body>
 
 </html>
