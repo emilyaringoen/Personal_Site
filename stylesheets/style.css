@@ -48,7 +48,7 @@ body {
 
 .my_name {
   font-size: 4em;
-  font-weight: 700;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -211,7 +211,7 @@ body {
 
 /* projects page styling */
 #projects {
-  height: 45em;
+  height: 65em;
   background-color: rgb(144, 190, 179);
 }
 
@@ -222,25 +222,22 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
-.projImg {
-  border-radius: 0.3em;
+.portfolio-img {
+  width: 100%;
+  height: 25em;
+  margin-bottom: 2em;
 }
 
-.page-header {
-  margin: 20px 0 20px;
+.leftImg{
+  margin-right: 1em;
 }
 
-.portfolio-item {
-  height: 157px;
-  border-radius: 0.3em;
+.portfolio-div:hover .desc-text {
+  display:block
 }
 
-.mainProjHead {
-  font-family: 'Playfair Display', serif;
-}
-
-.mainProjP {
-  font-size: 1.15em;
+.portfolio-div:hover .portfolio-img {
+  opacity: 3;
 }
 
 /*  Styling for Art Page  */
