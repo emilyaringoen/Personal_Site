@@ -70,7 +70,7 @@ body {
 	font-weight: normal;
 }
 
-.rw-words{
+/*.rw-words{
 	display: inline;
 }
 
@@ -79,9 +79,9 @@ body {
 	opacity: 0;
 	overflow: hidden;
 	width: 100%;
-}
+}*/
 
-.rw-words-1 span{
+/*.rw-words-1 span{
 	animation: rotateWordsFirst 20s linear infinite 0s;
 }
 
@@ -100,15 +100,15 @@ body {
 .rw-words span:nth-child(5) {
 	animation-delay: 16s;
 	color: #333333;
-}
+}*/
 
-@keyframes rotateWordsFirst {
+/*@keyframes rotateWordsFirst {
     0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
     8% { opacity: 1; height: 60px; }
     19% { opacity: 1; height: 60px; }
 	  25% { opacity: 0; height: 60px; }
     100% { opacity: 0; }
-}
+}*/
 
 /* about page styling */
 #about {
@@ -211,7 +211,7 @@ body {
 
 /* projects page styling */
 #projects {
-  height: 65em;
+  height: 70em;
   background-color: rgb(144, 190, 179);
 }
 
@@ -225,7 +225,7 @@ body {
 .portfolio-img {
   width: 100%;
   height: 25em;
-  margin-bottom: 2em;
+  margin-bottom: .5em;
 }
 
 .leftImg{
@@ -240,6 +240,14 @@ body {
   opacity: 3;
 }
 
+.portfolio-row {
+  margin-bottom: 1.5em;
+}
+
+.desc-text {
+  font-size: 1.25em;
+}
+
 /*  Styling for Art Page  */
 
 #art {
@@ -247,8 +255,12 @@ body {
   height: 100%;
 }
 
+.art-box {
+  width: 90%
+}
+
 .artImg {
-  height: 24em;
+  height: 20em;
   margin-top: 2em;
 }
 
@@ -264,6 +276,7 @@ body {
   padding: 7em 3em 3em 3em;
 }
 
+
 /*  Styling for footer  */
 footer {
   background-color: rgb(224, 235, 232);
@@ -273,4 +286,9 @@ footer {
 
 .footP {
   font-size: 1.15em;
+}
+
+.github-logo {
+  height: 50px;
+  margin: 0 auto;
 }
