@@ -81,6 +81,10 @@ body {
    border-right: 1px solid #333;
  }
 
+ .hide-on-big {
+   display: none;
+ }
+
  .hexagon {
   position: relative;
   width: 200px;
@@ -154,6 +158,10 @@ body {
    font-weight: 700;
    color: #333;
    font-family: 'Playfair Display', serif;
+ }
+
+ .hi-hidden {
+   display: none;
  }
 
  .about2 {
@@ -262,7 +270,7 @@ footer {
 @media only screen and (min-device-width: 320px) and (max-device-height: 736px) {
   .splash {
     background-color: rgb(144, 190, 179);
-    height: 75vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -271,6 +279,28 @@ footer {
 
   .cd-auto-hide-header {
     display: none;
+  }
+
+  .hide-on-big {
+    display: block;
+  }
+
+  #about {
+    height: 50vh;
+  }
+
+  .hide-me {
+    display: none;
+  }
+
+  .small-profile {
+    width: 90%;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+  }
+
+  .hexagon {
+    margin-bottom: 10em;
   }
 
   #projects {
